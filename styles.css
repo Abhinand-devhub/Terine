@@ -29,7 +29,7 @@ img { display: block; max-width: 100%; }
 .menu-lines::before { top: -6px; } .menu-lines::after { top: 6px; }
 .hero { min-height: 650px; height: min(760px, calc(100svh - 82px)); position: relative; display: flex; align-items: center; overflow: hidden; background: #173b2b; color: white; }
 .hero-photo, .hero-shade { position: absolute; inset: 0; }
-.hero-photo { background-image: url("./IMG_4299.webp"); background-size: cover; background-position: center 45%; transform: scale(1.02); }
+.hero-photo { background-image: url("./cover\ img.webp"); background-size: cover; background-position: center 45%; transform: scale(1.02); }
 .hero-shade { background: linear-gradient(90deg, rgba(12,34,24,.92) 0%, rgba(15,43,29,.79) 3%, rgba(15,43,29,.18) 80%), linear-gradient(0deg, rgba(8,24,17,.4), transparent 45%); }
 .hero-content { position: relative; z-index: 2; padding-top: 28px; }
 .eyebrow { text-transform: uppercase; letter-spacing: .19em; font-size: 10px; font-weight: 700; margin: 0 0 24px; color: #d3dfc8; }
@@ -94,13 +94,13 @@ blockquote { max-width: 800px; margin: 12px auto 25px; font-family: var(--serif)
 .species-card { background: #f4f1e8; color: var(--ink); }
 .species-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #d5ddcd; }
 .species-card-body { padding: 23px 22px 25px; }
-.species-card h3 { font-family: var(--serif); font-size: 25px; font-weight: 500; font-style: italic; margin: 0 0 4px; }
+.species-card h3 { font-family: var(--serif); font-size: 25px; font-weight: 500; margin: 0 0 4px; }
 .species-detail { color: #7a8478; font-size: 11px; margin-bottom: 15px; }
 .species-card-body > p:not(.species-label):not(.species-detail) { color: #5c665c; font-size: 12px; min-height: 60px; }
 .species-link { font-size: 11px; font-weight: 700; text-decoration: none; border-bottom: 1px solid #b2bda8; padding-bottom: 6px; display: inline-flex; gap: 15px; }
 .species-section .image-note { color: #b4c0b0; }
 .message-section { display: grid; grid-template-columns: .85fr 1fr; align-items: center; gap: 9%; }
-.message-image { min-height: 570px; background: #d9e1d2 url("./IMG_4192.webp") center / cover no-repeat; }
+.message-image { min-height: 570px; background: #d9e1d2 url("./quote\ img.webp") center / cover no-repeat; }
 .message-copy .section-kicker { margin-bottom: 28px; }
 .message-copy h2 { margin-bottom: 22px; }
 .message-copy .lead { font-size: 19px; }
