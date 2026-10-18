@@ -27,4 +27,37 @@
       }
     });
   }
+
+  // ----- Species carousel -----
+  const track = document.querySelector("#species-track");
+  const prevBtn = document.querySelector(".carousel-prev");
+  const nextBtn = document.querySelector(".carousel-next");
+
+  if (track && prevBtn && nextBtn) {
+    const cards = track.querySelectorAll(".species-card");
+    let index = 0;
+
+    const perView = () => {
+      if (window.innerWidth <= 480) return 1;
+      if (window.innerWidth <= 760) return 2;
+      return 3;
+    };
+
+    const update = () => {
+      const maxIndex = Math.max(0, cards.length - perView());
+      index = Math.max(0, Math.min(index, maxIndex));
+
+      const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+      const step = cards[0].offsetWidth + gap;
+      track.style.transform = `translateX(${-index * step}px)`;
+
+      prevBtn.disabled = index === 0;
+      nextBtn.disabled = index >= maxIndex;
+    };
+
+    nextBtn.addEventListener("click", () => { index += 1; update(); });
+    prevBtn.addEventListener("click", () => { index -= 1; update(); });
+    window.addEventListener("resize", update);
+    update();
+  }
 })();
